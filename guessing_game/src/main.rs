@@ -11,7 +11,7 @@ fn main() {
 
     loop {
         let mut guess: String = String::new();
-        let bytes_read = io::stdin()
+        io::stdin()
             .read_line(&mut guess)
             .expect("failed to read line");
 
