@@ -17,6 +17,7 @@ fn main() {
 
         //parse to int and shadow variable
         //trim also removes the '\n'
+        //parse knows what type to return by type inference
         let guess: i32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
